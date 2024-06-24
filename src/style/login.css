@@ -1,0 +1,12 @@
+#loginForm{
+    margin: 20px;
+
+}
+
+#loginForm > input {
+    padding: 10px;
+}
+
+#loginForm > h1 {
+    color: hsl(353, 100%, 78%);
+}

@@ -100,7 +100,7 @@
 
         <div class="header-user-actions">
 
-          <button class="action-btn">
+          <button class="action-btn" onclick="checkAndRedirect('key', 'src/userIntractionPages/userPage.html')">
             <ion-icon name="person-outline"></ion-icon>
           </button>
 
@@ -274,106 +274,7 @@
 
             </div>
           </li>
-          <!--Mane's-->
-          <li class="menu-category">
-            <a href="#" class="menu-title">Men's</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="#">Shirt</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Shorts & Jeans</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Safety Shoes</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Wallet</a>
-              </li>
-
-            </ul>
-          </li>
-          <!--Women's-->
-          <li class="menu-category">
-            <a href="#" class="menu-title">Women's</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="#">Dress & Frock</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Earrings</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Necklace</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Makeup Kit</a>
-              </li>
-
-            </ul>
-          </li>
-          <!--jewlery-->
-          <li class="menu-category">
-            <a href="#" class="menu-title">Jewelry</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="#">Earrings</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Couple Rings</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Necklace</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Bracelets</a>
-              </li>
-
-            </ul>
-          </li>
-          <!--Perfume-->
-          <li class="menu-category">
-            <a href="#" class="menu-title">Perfume</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="#">Clothes Perfume</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Deodorant</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Flower Fragrance</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Air Freshener</a>
-              </li>
-
-            </ul>
-          </li>
-          <!--HOt Offers-->
-          <li class="menu-category">
-            <a href="#" class="menu-title">Hot Offers</a>
-          </li>
+          
 
         </ul>
 
@@ -383,7 +284,7 @@
 
     <div class="mobile-bottom-navigation">
 
-      <button class="action-btn" data-mobile-menu-open-btn>
+      <button class="action-btn" data-mobile-menu-open-btn  >
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
@@ -393,7 +294,7 @@
         <span class="count">0</span>
       </button>
 
-      <button class="action-btn">
+      <button class="action-btn" >
         <ion-icon name="home-outline"></ion-icon>
       </button>
 
@@ -742,13 +643,12 @@
 
     <!--
       - CATEGORY
-    -->
 
     <div class="category">
 
       <div class="container">
 
-        <div class="category-item-container has-scrollbar">
+        <div  class="category-item-container has-scrollbar">
 
           <div class="category-item">
 
@@ -770,151 +670,13 @@
 
           </div>
 
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Winter wear</h3>
-
-                <p class="category-item-amount">(58)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Glasses & lens</h3>
-
-                <p class="category-item-amount">(68)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Shorts & jeans</h3>
-
-                <p class="category-item-amount">(84)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">T-shirts</h3>
-
-                <p class="category-item-amount">(35)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Jacket</h3>
-
-                <p class="category-item-amount">(16)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Watch</h3>
-
-                <p class="category-item-amount">(27)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
-          <div class="category-item">
-
-            <div class="category-img-box">
-              <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
-            </div>
-
-            <div class="category-content-box">
-
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Hat & caps</h3>
-
-                <p class="category-item-amount">(39)</p>
-              </div>
-
-              <a href="#" class="category-btn">Show all</a>
-
-            </div>
-
-          </div>
-
+        
         </div>
 
       </div>
 
     </div>
+    -->
 
 
 
@@ -935,9 +697,9 @@
 
         <div class="sidebar  has-scrollbar" data-mobile-menu>
 
-          <div class="sidebar-category">
+          <div class="sidebar-category" >
 
-            <div class="sidebar-top">
+            <div class="sidebar-top" >
               <h2 class="sidebar-title">Category</h2>
 
               <button class="sidebar-close-btn" data-mobile-menu-close-btn>
@@ -947,7 +709,7 @@
 
             <ul class="sidebar-menu-category-list">
 
-              <li class="sidebar-menu-category">
+              <li class="sidebar-menu-category" id="categoriesList">
 
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
@@ -1339,7 +1101,7 @@
             - PRODUCT GRID
           -->
 
-          <div class="product-main">
+          <div class="product-main" id="productDetails">
 
             <h2 class="title">New Products</h2>
 
@@ -1841,5 +1603,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
+<script src="src/script/redicrectTologinIfNotLogedIn.js"></script>
+<script src="src/script/addingProductsList.js"></script>
+<script src="src/script/gettingCategoriesForSIdebar.js"></script>
 </html>
