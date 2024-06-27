@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../script/cookiesManager.js"></script>
+
   <title>Anon</title>
 
   <script>
@@ -539,55 +541,57 @@
 
           <ul class="sidebar-menu-category-list">
 
-            <li class="sidebar-menu-category">
+            <li class="sidebar-menu-category" id="categoriesList">
 
-              <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                <div class="menu-title-flex">
-                  <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
-                    class="menu-title-img">
-
-                  <p class="menu-title">Clothes</p>
-                </div>
-
-
-              </button>
-
-              <ul class="sidebar-submenu-category-list" data-accordion>
-
-                <li class="sidebar-submenu-category">
-                  <a href="#" class="sidebar-submenu-title">
-                    <p class="product-name">Shirt</p>
-                    <data value="300" class="stock" title="Available Stock">300</data>
-                  </a>
-                </li>
-
-                <li class="sidebar-submenu-category">
-                  <a href="#" class="sidebar-submenu-title">
-                    <p class="product-name">shorts & jeans</p>
-                    <data value="60" class="stock" title="Available Stock">60</data>
-                  </a>
-                </li>
-
-                <li class="sidebar-submenu-category">
-                  <a href="#" class="sidebar-submenu-title">
-                    <p class="product-name">jacket</p>
-                    <data value="50" class="stock" title="Available Stock">50</data>
-                  </a>
-                </li>
-
-                <li class="sidebar-submenu-category">
-                  <a href="#" class="sidebar-submenu-title">
-                    <p class="product-name">dress & frock</p>
-                    <data value="87" class="stock" title="Available Stock">87</data>
-                  </a>
-                </li>
-
-              </ul>
-
-            </li>
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+    
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+    
+                    <p class="menu-title">Clothes</p>
+                  </div>
+    
+    
+                </button>
+    
+                <ul class="sidebar-submenu-category-list" data-accordion>
+    
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Shirt</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+    
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">shorts & jeans</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+    
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">jacket</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+    
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">dress & frock</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+    
+                </ul>
+    
+              </li>
 
           </ul>
+
+          
 
         </div>
 
@@ -596,15 +600,84 @@
       </div>
 
 
-
-
-
-
-
-        <div id="productDetails">
+        <div id="productDetailsOne">
 
         </div>
+
+   
+
+
     </div>
+    <div class="container">
+      <div class="product-main" id="productDetails">
+
+        <h2 class="title">New Products</h2>
+  
+        <div class="product-grid">
+  
+          <div class="showcase">
+  
+            <div class="showcase-banner">
+  
+              <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+              <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+  
+              <p class="showcase-badge">15%</p>
+  
+              <div class="showcase-actions">
+  
+                <button class="btn-action">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+  
+                <button class="btn-action">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+  
+                <button class="btn-action">
+                  <ion-icon name="repeat-outline"></ion-icon>
+                </button>
+  
+                <button class="btn-action">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+            <div class="showcase-content">
+  
+              <a href="#" class="showcase-category">jacket</a>
+  
+              <a href="#">
+                <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+              </a>
+  
+              <div class="showcase-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+  
+              <div class="price-box">
+                <p class="price">$48.00</p>
+                <del>$75.00</del>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+        </div>
+  
+      </div>
+  
+    </div>
+
 </div>
 
 <script>
@@ -617,7 +690,7 @@
         const { productData, imagePath } = data;
 
         // Display product details
-        const productDetailsDiv = document.getElementById('productDetails');
+        const productDetailsDiv = document.getElementById('productDetailsOne');
         console.log(imagePath);
         productDetailsDiv.innerHTML = `
 <div >
@@ -631,13 +704,13 @@
 
     <a href="#" >${productData.TITRE}</a>,
     <h2> Description : </h2>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam non eligendi culpa provident quasi eveniet facere fuga consequatur repellat? Itaque voluptatem, maiores dolorem atque quod earum vel autem. Sunt, excepturi.
-        </p>
+    <p>${productData.DESCRIPTION}</p>
     <div class="price-box">
       <p class="price">$${productData.PRIX}</p>
       <del>$</del>
     </div>
+    <button type="button">Add to card</button>
+    <button type="button"  onclick="addToPanier( '${CookieManager.getCookie('key')}', '${productId},'underProcessing' )">buy now</button>
 
   </div>
 
@@ -656,13 +729,12 @@
     }
 }
 
-console.log(id);
+
+
 fetchProductData(id);
 </script>
 
-
-
-       <!--
+<!--
     - custom js link
   -->
   <script src="../../assets/js/script.js"></script>
@@ -672,9 +744,17 @@ fetchProductData(id);
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
+
 <script src="../script/cookiesManager.js"></script>
 <script src="../script/gettingCategoriesForSIdebar.js"></script>
+<script src="../script/addingProductsList.js"></script>
+<script src="../script/scriptToAddToPanier.js"></script>
+<script>
+  console.log( `${CookieManager.getCookie('key')}`);
+
+  fetchProductList(10 , 'productDetails' , 'ProductPage.html');
+
+</script>
     
 </html>

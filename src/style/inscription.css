@@ -1,0 +1,22 @@
+section {
+    margin: 30px;
+}
+
+section > h1{
+    color: hsl(353, 100%, 78%); 
+}
+section > input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid hsl(0, 0%, 93%);
+}
+
+section > button {
+    color: hsl(353, 100%, 78%); 
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    margin-top: 20px;
+    border: 2px solid hsl(0, 0%, 93%);
+    background-color:hsl(0, 0%, 93%) ;
+}
